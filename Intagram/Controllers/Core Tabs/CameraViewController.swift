@@ -5,7 +5,7 @@
 //  Created by guntex01 on 9/15/20.
 //  Copyright © 2020 guntex01. All rights reserved.
 //
-
+import AVFoundation
 import UIKit
 
 class CameraViewController: UIViewController {
@@ -13,18 +13,15 @@ class CameraViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        view.backgroundColor = .systemBackground
+        
+        navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    
+    private func didTapTalePicture() {
+        
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
